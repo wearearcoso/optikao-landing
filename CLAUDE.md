@@ -78,6 +78,15 @@ git commit -m "feat: descripción del cambio"
 git push origin main
 ```
 
+## Orquestación multi-agente
+
+Este proyecto participa en el sistema multi-agente Arcoso (Hermes + OpenCode + Claude Desktop).
+**Antes de trabajar:**
+1. `git pull` del repo `~/arcoso/orquestacion-arcoso` (o `/opt/data/repo/orquestacion-arcoso` en VPS)
+2. Leer `CONTEXT.json` — verificar locks y quién está activo
+3. Si hay lock en este proyecto, NO tocarlo
+4. Leer `KEEL.md` para contexto global del sistema
+
 ## Infraestructura
 - **Cloudflare Pages project**: `optikao`
 - **Account ID CF**: en `CLOUDFLARE_ACCOUNT_ID` (`.secrets.env`)
